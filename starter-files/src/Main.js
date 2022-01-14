@@ -91,12 +91,12 @@ const Main = (props) => {
       <br></br>
       <h1 id="title"> Create an NFT with Cere Freeport and DDC </h1>
 
-      <div class="header">
+      <div className="header">
         <h3>Status message:</h3>
       <p id="status"> {status} </p>
       </div>
 
-      <div class="header2">
+      <div className="header2">
         <h3>Outputs:</h3>
       <p id="output"> {uploadOutput} </p>
       <p id="output"> Downloaded image: </p>
@@ -110,7 +110,7 @@ const Main = (props) => {
       <h2> Upload your content to DDC </h2>
       {<img src={preview} style={{width: "200px"}}></img>}
       <br></br>
-      <form class="form" id="myform">
+      <form className="form" id="myform">
       <input type="file" id="inpFile" onChange={(event) => { setUploadData(event.target.files[0]); setPreview(URL.createObjectURL(event.target.files[0])); }}></input>
       </form>
       &nbsp;
